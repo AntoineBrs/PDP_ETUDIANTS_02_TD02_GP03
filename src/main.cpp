@@ -60,4 +60,5 @@ void setup() {
 
 void loop() {
   // Not needed anymore, the function is kept so Platformio does not complain.
+  printf("test");
 }
