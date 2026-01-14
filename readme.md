@@ -137,7 +137,7 @@ mqtt_client.setServer(mqtt_server, mqtt_port);
 client.setCACert(ca_cert);
 ```
 1.  A ce moment, le code est prêt à envoyer les valeurs lues au broker avec MQTT.
-2.  Au bon endroit dans le code, connectez le client au broker avec la fonction `mqtt_client.connect()`, connez-lui les bons arguments.
+2.  Au bon endroit dans le code, connectez le client au broker avec la fonction `mqtt_client.connect()`, donnez-lui les bons arguments.
 3.  <ins>`Si et seulement si`</ins> la fonction `connect` a bien fonctionné (elle retourne un booléen...), publiez la température et l'humidité relative avec MQTT.
     - Le topic pour la température est `"TDXX_GPXX/temp"`, même formalisme que pour `client_id`.
     - Le topic pour l'humidité est `"TDXX_GPXX/relhum"`, même formalisme que pour `client_id`.
