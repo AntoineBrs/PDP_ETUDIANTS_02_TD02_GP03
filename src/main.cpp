@@ -2,6 +2,16 @@
 #include <Adafruit_Sensor.h>
 #include <DHT.h>
 #include <DHT_U.h>
+#include "WiFiClientSecure.h"
+#include <PubSubClient.h>
+
+const char* wifi_ssid = "antoine.brosseau@edu.ece.fr";
+const char* wifi_password = "ABtennis-2004";
+const char* mqtt_server = "27cc61dbaffc4da08cd0081cabd8cf01.s2.eu.hivemq.cloud";
+int mqtt_port = 8883;
+const char* mqtt_user = "create_ece";
+const char* mqtt_pass = "create123A";
+const char* client_id = "TD02_GP03";
 
 // Define the pins that we will use
 #define SENSOR 33
